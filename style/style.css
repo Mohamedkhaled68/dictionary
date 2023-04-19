@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins';
+}
+
+.container{
+    background-color: #A6D0DD;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 35px;
+    box-shadow: 0px 0px 10px rgb(226, 226, 226);
+}
+
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+input{
+    border: none;
+    padding: 10px;
+    transition: 0.2s linear;
+    border-bottom: 2px solid #2f59cd38;
+    font-size: 18px;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #2F58CD;
+}
+
+input::placeholder{
+    font-size: 17px;
+    color: rgb(161, 161, 161);
+}
+
+.search button{
+    padding: 10px 25px;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-color: #2F58CD;
+    font-size: 16px;
+}
+
+
+
+
+.result .word{
+    display: flex;
+    justify-content: space-between;
+}
+
+.word h2{
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+
+
+
+.result .word button{
+    background-color: #fff;
+    color: #2f59cd90;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s linear;
+}
+
+
+.result .word button.active{
+    color: #2f59cd;
+}
+
+.details{
+    color: rgb(188, 188, 188);
+    font-style: italic;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.meaning{
+    margin-top: 20px;
+    color: rgb(124, 124, 124);
+    position: relative;
+}
+.example{
+    margin-top: 20px;
+    color: rgb(124, 124, 124);
+    position: relative;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.example::before{
+    content: '';
+    background-color: aquamarine;
+    height: 100%;
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
